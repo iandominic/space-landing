@@ -2,7 +2,6 @@
 
 .barlow {
     font-family: 'Barlow', sans-serif;
-    color: #D0D6F9;
 }
   
   .belfair {
@@ -12,6 +11,10 @@
 .heading-5 {
     font-family: 'Barlow Condensed', sans-serif;
     color: #D0D6F9;
+}
+
+.barlow-condensed {
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
 .barlow-white {
@@ -67,4 +70,9 @@
 .sidenav {
     backdrop-filter: blur(35px);
 }
+
+.lineMask {
+    overflow: hidden;
+  }
+
 

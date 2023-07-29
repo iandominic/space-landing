@@ -1,4 +1,3 @@
-"use client";
 import React, { useState } from "react";
 import Image from "next/image";
 import "./styles/styles.css";
@@ -11,7 +10,7 @@ const Header = () => {
     {
       name: (
         <div className="flex items-center gap-3">
-          <span className="font-[600]">00</span>
+          <span className="font-[700]">00</span>
           <span className="font-[400]">HOME</span>
         </div>
       ),
@@ -22,7 +21,7 @@ const Header = () => {
     {
       name: (
         <div className="flex items-center gap-3">
-          <span className="font-[600]">01</span>
+          <span className="font-[700]">01</span>
           <span className="font-[400]">DESTINATION</span>
         </div>
       ),
@@ -33,7 +32,7 @@ const Header = () => {
     {
       name: (
         <div className="flex items-center gap-3">
-          <span className="font-[600]">02</span>
+          <span className="font-[700]">02</span>
           <span className="font-[400]">CREW</span>
         </div>
       ),
@@ -44,7 +43,7 @@ const Header = () => {
     {
       name: (
         <div className="flex items-center gap-3">
-          <span className="font-[600]">03</span>
+          <span className="font-[700]">03</span>
           <span className="font-[400]">TECHNOLOGY</span>
         </div>
       ),

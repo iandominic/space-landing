@@ -1,5 +1,11 @@
+"use client";
 import Header from "@/components/Header";
 import "./globals.css";
+
+export const metadata = {
+  title: "Space Landing",
+  description: "From: Frontend Mentor",
+};
 
 const RootLayout = ({ children }) => {
   return (
