@@ -26,7 +26,7 @@ const Hero = () => {
   return (
     <div className="bg-mobile-bg bg-cover bg-no-repeat h-full min-h-[667px] w-full">
       <div className="flex flex-col gap-[81px] items-center justify-center text-center px-6 pt-[110px]">
-        <div ref={textBody} className="flex gap-1 flex-col">
+        <div ref={textBody} className="flex flex-col">
           <div className="lineMask">
             <motion.p
               className="heading-5 text-[16px] tracking-[2.7px] "
