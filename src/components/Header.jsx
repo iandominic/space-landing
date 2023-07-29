@@ -131,7 +131,7 @@ const Header = () => {
           >
             <div className="flex flex-col gap-5 pr-[95px] pl-[30px] pt-[120px]">
               {items?.map((obj, index) => {
-                return <LinkItems data={{ ...obj, index }} />;
+                return <LinkItems key={index} data={{ ...obj, index }} />;
               })}
             </div>
           </motion.div>
