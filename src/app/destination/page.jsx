@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import moon from "../assets/planets/image-moon.webp";
+import moon from "../../assets/planets/image-moon.webp";
 import { Divider } from "antd";
 
 const Planets = () => {

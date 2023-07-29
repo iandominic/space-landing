@@ -1,4 +1,6 @@
-import Header from "@/components/Header";
+"use client";
+
+import Header from "./components/Header";
 import "./globals.css";
 
 export const metadata = {

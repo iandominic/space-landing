@@ -2,8 +2,9 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import "./styles/styles.css";
-import logo from "../assets/header/logo.png";
+import logo from "../../assets/header/logo.png";
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -15,7 +16,7 @@ const Header = () => {
           <span className="font-[400]">HOME</span>
         </div>
       ),
-      key: "about",
+      key: "/hero",
       selected: true,
       active: true,
     },
@@ -26,7 +27,7 @@ const Header = () => {
           <span className="font-[400]">DESTINATION</span>
         </div>
       ),
-      key: "home",
+      key: "/destination",
       selected: false,
       active: true,
     },
@@ -37,7 +38,7 @@ const Header = () => {
           <span className="font-[400]">CREW</span>
         </div>
       ),
-      key: "home",
+      key: "/home",
       selected: false,
       active: true,
     },
@@ -48,7 +49,7 @@ const Header = () => {
           <span className="font-[400]">TECHNOLOGY</span>
         </div>
       ),
-      key: "home",
+      key: "/home",
       selected: false,
       active: true,
     },
@@ -100,14 +101,14 @@ const Header = () => {
         initial="initial"
         className="items-start gap-6 md:hidden flex flex-col"
       >
-        <p
+        <Link
           onClick={() => setNav(false)}
-          to={data.key}
+          href={data.key}
           key={data.key}
-          className="hover:text-gray-400 tracking-[2.7px] text-[16px] barlow-white text-white no-underline cursor-pointer  text-left"
+          className="hover:text-gray-400 tracking-[2.7Linkx] text-[16px] barlow-white text-white no-underline cursor-pointer  text-left"
         >
           {data.name}
-        </p>
+        </Link>
       </motion.div>
     );
   };
@@ -116,6 +117,7 @@ const Header = () => {
     <div className="fixed left-0 top-0 right-0 h-[full] z-[999] bg-transparent ">
       <div className="flex p-6 justify-between items-center text-white">
         <motion.div
+          viewport={{ once: true }}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ type: "spring", stiffness: 100, ease: "linear" }}
@@ -123,6 +125,7 @@ const Header = () => {
           <Image alt="" src={logo} width={40} height={40} preview={false} />
         </motion.div>
         <motion.div
+          viewport={{ once: true }}
           className="btn md:hidden"
           onClick={() => setNav(!nav)}
           initial={{ opacity: 0 }}

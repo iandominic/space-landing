@@ -1,11 +1,5 @@
-import Hero from "@/components/Hero";
-import Planets from "@/components/Planets";
+"use-client";
 
 export default function Home() {
-  return (
-    <div>
-      <Hero />
-      {/* <Planets /> */}
-    </div>
-  );
+  return <div></div>;
 }

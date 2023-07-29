@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
-import "./styles/styles.css";
+import "../components/styles/styles.css";
 import { useInView, motion } from "framer-motion";
 
 const Hero = () => {
