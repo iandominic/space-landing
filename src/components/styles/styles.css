@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700&family=Barlow:wght@200;300;400;500;600;700&family=Bellefair&display=swap');
+
+.barlow {
+    font-family: 'Barlow', sans-serif;
+    color: #D0D6F9;
+}
+  
+  .belfair {
+    font-family: 'Bellefair', serif;
+  }
+
+.heading-5 {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #D0D6F9;
+}
+
+.barlow-white {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #ffffff;
+}
+
+.btn {
+    width: 24px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.btn .burger {
+    width: 100%;
+}
+
+.btn .burger::after, .burger::before {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: #D0D6F9;
+    height: 2px;
+    margin: auto;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.btn .burger::after {
+    top: -5px;
+}
+
+.btn .burger::before {
+    top: 5px;
+}
+
+.btn .burgerActive::after {
+    top: -1px;
+    transform: rotate(-45deg);
+
+}
+
+.btn .burgerActive::before {
+    top: 1px;
+    transform: rotate(45deg);
+}
+
+.sidenav {
+    backdrop-filter: blur(35px);
+}
+
