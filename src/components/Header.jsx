@@ -115,7 +115,7 @@ const Header = () => {
   return (
     <div className="fixed left-0 top-0 right-0 h-[full] z-[999] bg-transparent ">
       <div className="flex p-6 justify-between items-center text-white">
-        <Image src={logo} width={40} height={40} preview={false} />
+        <Image alt="" src={logo} width={40} height={40} preview={false} />
         <div className="btn md:hidden" onClick={() => setNav(!nav)}>
           <div className={`burger ${nav ? "burgerActive" : ""}`}></div>
         </div>
