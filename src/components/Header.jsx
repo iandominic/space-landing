@@ -3,7 +3,6 @@ import Image from "next/image";
 import "./styles/styles.css";
 import logo from "../assets/header/logo.png";
 import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
