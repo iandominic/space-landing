@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import moon from "../../assets/planets/image-moon.webp";
