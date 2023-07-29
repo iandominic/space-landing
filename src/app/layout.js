@@ -1,8 +1,7 @@
-"use client";
 import Header from "@/components/Header";
 import "./globals.css";
 
-export default function RootLayout({ children }) {
+const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <body>
@@ -11,4 +10,6 @@ export default function RootLayout({ children }) {
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;
