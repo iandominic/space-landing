@@ -17,7 +17,7 @@ const Header = () => {
           <span className="font-[400]">HOME</span>
         </div>
       ),
-      key: "space-landing-ltw28ynvl-iandominic.vercel.app/hero",
+      key: "/hero",
       selected: true,
       active: true,
     },
@@ -28,7 +28,7 @@ const Header = () => {
           <span className="font-[400]">DESTINATION</span>
         </div>
       ),
-      key: "space-landing-ltw28ynvl-iandominic.vercel.app/destination",
+      key: "/destination",
       selected: false,
       active: true,
     },
