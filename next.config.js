@@ -6,7 +6,7 @@ module.exports = {
     return [
       {
         source: "/",
-        destination: "/hero",
+        destination: "space-landing-ltw28ynvl-iandominic.vercel.app/hero",
         permanent: true,
       },
     ];

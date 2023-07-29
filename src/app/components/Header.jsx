@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import Image from "next/image";
 import "./styles/styles.css";
@@ -16,7 +17,7 @@ const Header = () => {
           <span className="font-[400]">HOME</span>
         </div>
       ),
-      key: "/hero",
+      key: "space-landing-ltw28ynvl-iandominic.vercel.app/hero",
       selected: true,
       active: true,
     },
@@ -27,7 +28,7 @@ const Header = () => {
           <span className="font-[400]">DESTINATION</span>
         </div>
       ),
-      key: "/destination",
+      key: "space-landing-ltw28ynvl-iandominic.vercel.app/destination",
       selected: false,
       active: true,
     },
