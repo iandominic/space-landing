@@ -73,6 +73,29 @@
 
 .lineMask {
     overflow: hidden;
-  }
+}
+
+.slide-nav::after {
+    content: '';
+    display: block;
+    width: 0;
+    background-color: #D0D6F9;
+    height: 2px;
+    margin: auto;
+    position: relative;
+    transition: all 0.3s;
+    margin-top: 5px;
+    
+}
+
+.slide-active::after {
+    width: 100%;
+    background-color: white;
+    height: 2px;
+    margin: auto;
+    position: relative;
+    transition: all 0.3s;
+    margin-top: 6px;
+}
 
 
