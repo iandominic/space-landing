@@ -39,7 +39,7 @@ const Header = () => {
           <span className="font-[400]">CREW</span>
         </div>
       ),
-      key: "/home",
+      key: "/hero",
       selected: false,
       active: true,
     },
@@ -50,7 +50,7 @@ const Header = () => {
           <span className="font-[400]">TECHNOLOGY</span>
         </div>
       ),
-      key: "/home",
+      key: "/hero",
       selected: false,
       active: true,
     },

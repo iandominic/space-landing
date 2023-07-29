@@ -5,7 +5,7 @@ module.exports = {
   async redirects() {
     return [
       {
-        source: "/",
+        source: "https://space-landing-puce.vercel.app/",
         destination: "/hero",
         permanent: true,
       },
