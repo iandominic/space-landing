@@ -63,9 +63,18 @@ const Hero = () => {
             );
           })}
         </div>
-        <button className="w-[150px] h-[150px] belfair flex items-center justify-center bg-white text-[20px] tracking-[1.25px] font-[400] rounded-full">
+        <motion.button
+          initial={{ scale: 0.8, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 200,
+            ease: [0.76, 0, 0.24, 1],
+          }}
+          className="w-[150px] h-[150px] belfair flex items-center justify-center bg-white text-[20px] tracking-[1.25px] font-[400] rounded-full"
+        >
           <p>EXPLORE</p>
-        </button>
+        </motion.button>
       </div>
     </div>
   );

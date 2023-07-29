@@ -115,10 +115,22 @@ const Header = () => {
   return (
     <div className="fixed left-0 top-0 right-0 h-[full] z-[999] bg-transparent ">
       <div className="flex p-6 justify-between items-center text-white">
-        <Image alt="" src={logo} width={40} height={40} preview={false} />
-        <div className="btn md:hidden" onClick={() => setNav(!nav)}>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ type: "spring", stiffness: 100, ease: "linear" }}
+        >
+          <Image alt="" src={logo} width={40} height={40} preview={false} />
+        </motion.div>
+        <motion.div
+          className="btn md:hidden"
+          onClick={() => setNav(!nav)}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ type: "spring", stiffness: 100, ease: "linear" }}
+        >
           <div className={`burger ${nav ? "burgerActive" : ""}`}></div>
-        </div>
+        </motion.div>
       </div>
       <AnimatePresence mode="wait">
         {nav && (
