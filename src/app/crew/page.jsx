@@ -15,7 +15,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const Crew = () => {
-  const [desti, setDesti] = useState(0);
   const [crewIndex, setCrewIndex] = useState(0);
 
   const [animateDiv, setAnimateDiv] = useState();
@@ -62,13 +61,14 @@ const Crew = () => {
     },
     {
       img: ansari,
-      title: "Titan",
-      pos: "Commander",
+      title: "Anousheh Ansari",
+      pos: "Flight Engineer",
       desc: [
-        "Douglas Gerald Hurley is an American engineer,",
-        "former Marine Corps pilot and former NASA",
-        "astronaut. He launched into space for the third",
-        "time as commander of Crew Dragon Demo-2.",
+        "Anousheh Ansari is an Iranian American engineer",
+        "and co-founder of Prodea Systems. Ansari was the",
+        "fourth self-funded space tourist, the first",
+        "self-funded woman to fly to the ISS, and the first",
+        "Iranian in space.",
       ],
     },
   ];
@@ -116,6 +116,7 @@ const Crew = () => {
           {crew.map((obj, key) => (
             <SwiperSlide>
               <motion.div
+                className="w-full h-full max-h-[223px] max-width-[327px]"
                 variants={animate}
                 initial="rotateInit"
                 animate={animateDiv ? "rotatePlanet" : ""}
