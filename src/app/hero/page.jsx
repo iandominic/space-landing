@@ -3,6 +3,7 @@
 import React, { useRef } from "react";
 import "../components/styles/styles.css";
 import { useInView, motion } from "framer-motion";
+import Link from "next/link";
 
 const Hero = () => {
   const phrases = [
@@ -66,6 +67,7 @@ const Hero = () => {
         <motion.button
           initial={{ scale: 0.8, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
+          whileTap={{ scale: 0.9 }}
           transition={{
             type: "spring",
             stiffness: 200,
@@ -73,7 +75,9 @@ const Hero = () => {
           }}
           className="w-[150px] h-[150px] belfair flex items-center justify-center bg-white text-[20px] tracking-[1.25px] font-[400] rounded-full"
         >
-          <p>EXPLORE</p>
+          <Link href={"/destination"}>
+            <p>EXPLORE</p>
+          </Link>
         </motion.button>
       </div>
     </div>

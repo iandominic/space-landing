@@ -106,7 +106,7 @@ const Header = () => {
           onClick={() => setNav(false)}
           href={data.key}
           key={data.key}
-          className="hover:text-gray-400 tracking-[2.7Linkx] text-[16px] barlow-white text-white no-underline cursor-pointer  text-left"
+          className="hover:text-gray-400 tracking-[2.7px] text-[16px] barlow-white text-white no-underline cursor-pointer  text-left"
         >
           {data.name}
         </Link>
