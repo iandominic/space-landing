@@ -140,7 +140,7 @@ const Crew = () => {
                 variants={animate}
                 initial="initial"
                 animate={animateDiv ? "open" : ""}
-                className="uppercase text-[rgb(144, 146, 150)] belfair text-[16px]"
+                className="uppercase text-[#84858A] belfair text-[16px]"
               >
                 {crew[crewIndex].pos}
               </motion.h3>
