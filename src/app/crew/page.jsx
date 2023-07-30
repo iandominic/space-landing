@@ -85,7 +85,6 @@ const Crew = () => {
 
   const textBody = useRef(null);
   const isInView = useInView(textBody, { once: false, margin: "-10%" });
-  console.log(crewIndex);
 
   return (
     <div className="bg-crew-bg bg-cover bg-no-repeat w-full h-screen">
