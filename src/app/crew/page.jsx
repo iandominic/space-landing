@@ -114,7 +114,7 @@ const Crew = () => {
           className="mySwiper w-full h-full flex items-center justify-center"
         >
           {crew.map((obj, key) => (
-            <SwiperSlide>
+            <SwiperSlide key={key}>
               <motion.div
                 className="w-full h-full max-h-[223px] max-width-[327px]"
                 variants={animate}
