@@ -98,4 +98,29 @@
     margin-top: 6px;
 }
 
+.svgCurve {
+    position: absolute;
+    top: 0;
+    left: -99px;
+    width: 100px;
+    height: 100%;
+    fill: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(35px);
+    stroke: none;
+}
 
+  .swiper-slide img {
+    max-width: 177px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 20px;
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: white !important; 
+  }
+  
+  /* Change the dots' position */
+  .swiper-pagination {
+    bottom: -5px !important;
+  }

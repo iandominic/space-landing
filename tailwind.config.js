@@ -11,6 +11,7 @@ module.exports = {
         "mobile-bg": "url('../assets/mobile/background-home-mobile.jpg')",
         "destination-bg":
           "url('../assets/mobile/background-destination-mobile.jpg')",
+        "crew-bg": "url('../assets/mobile/background-crew-mobile.jpg')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

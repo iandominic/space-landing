@@ -24,7 +24,7 @@ const Hero = () => {
   const isInView = useInView(textBody, { once: false, margin: "-10%" });
 
   return (
-    <div className="bg-mobile-bg bg-cover bg-no-repeat h-full min-h-[667px] w-full">
+    <div className="bg-mobile-bg bg-cover bg-no-repeat h-screen min-h-[667px] w-full">
       <div className="flex flex-col gap-[81px] items-center justify-center text-center px-6 pt-[110px]">
         <div ref={textBody} className="flex flex-col">
           <div className="lineMask">

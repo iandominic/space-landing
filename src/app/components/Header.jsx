@@ -39,7 +39,7 @@ const Header = () => {
           <span className="font-[400]">CREW</span>
         </div>
       ),
-      key: "/hero",
+      key: "/crew",
       selected: false,
       active: true,
     },
@@ -123,7 +123,7 @@ const Header = () => {
           whileInView={{ opacity: 1 }}
           transition={{ type: "spring", stiffness: 100, ease: "linear" }}
         >
-          <Image alt="" src={logo} width={40} height={40} preview={false} />
+          <Image alt="" src={logo} width={40} height={40} />
         </motion.div>
         <motion.div
           viewport={{ once: true }}
