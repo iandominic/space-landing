@@ -114,21 +114,23 @@ const Crew = () => {
           className="mySwiper w-full h-full flex items-center justify-center"
         >
           {crew.map((obj, key) => (
-            <SwiperSlide key={key}>
-              <motion.div
-                className="w-full h-full max-h-[223px] max-width-[327px]"
-                variants={animate}
-                initial="rotateInit"
-                animate={animateDiv ? "rotatePlanet" : ""}
-                transition={{
-                  type: "spring",
-                  stiffness: 150,
-                  ease: [0.76, 0, 0.24, 1],
-                }}
-              >
-                <Image alt="" src={obj.img} width={"100%"} height={"100%"} />
-              </motion.div>
-            </SwiperSlide>
+            <div className="pagi" key={key}>
+              <SwiperSlide>
+                <motion.div
+                  className="w-full h-full max-h-[223px] max-width-[327px]"
+                  variants={animate}
+                  initial="rotateInit"
+                  animate={animateDiv ? "rotatePlanet" : ""}
+                  transition={{
+                    type: "spring",
+                    stiffness: 150,
+                    ease: [0.76, 0, 0.24, 1],
+                  }}
+                >
+                  <Image alt="" src={obj.img} width={"100%"} height={"100%"} />
+                </motion.div>
+              </SwiperSlide>
+            </div>
           ))}
         </Swiper>
         <div className="flex flex-col gap-3">

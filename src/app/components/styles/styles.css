@@ -115,14 +115,13 @@
     max-height: 223px !important;
     margin-inline: auto;
     padding: 20px !important;
+    object-fit: contain;
   }
-
 
   .swiper-pagination-bullet {
     background-color: white !important; 
   }
   
-  /* Change the dots' position */
   .swiper-pagination {
     bottom: -5px !important;
   }
