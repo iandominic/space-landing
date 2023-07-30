@@ -111,13 +111,13 @@ const Crew = () => {
           }}
           pagination={true}
           modules={[Pagination]}
-          className="mySwiper w-full h-full flex items-center justify-center"
+          className="mySwiper w-full h-full flex items-center justify-center pagi"
         >
           {crew.map((obj, key) => (
-            <div className="pagi" key={key}>
+            <div key={key}>
               <SwiperSlide>
                 <motion.div
-                  className="w-full h-full max-h-[223px] max-width-[327px]"
+                  className="w-full h-full "
                   variants={animate}
                   initial="rotateInit"
                   animate={animateDiv ? "rotatePlanet" : ""}
